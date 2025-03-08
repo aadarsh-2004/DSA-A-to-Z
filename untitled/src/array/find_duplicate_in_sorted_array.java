@@ -1,5 +1,4 @@
 package array;
-
 import java.util.Arrays;
 
 public class find_duplicate_in_sorted_array {

@@ -3,13 +3,14 @@ package array;
 public class FIndMissingNum {
     public static void main(String[] args) {
         int[] arr= {1,2,4,5};
+        int n =5;
+        int sum = 0;
+        int osum= (n*(n+1))/2;
+        int missingnum=osum-sum;
 
-        for (int i = 0; i <arr.length-1 ; i++) {
-            if(arr[i+1] != arr[i]+1){
-                System.out.println("missing element is " + (arr[i]+1));
-
-            }
-
+        for (int i = 0; i <arr.length ; i++) {
+            sum=sum+arr[i];
         }
+        System.out.print("Missing Number is "+ missingnum);
     }
 }
